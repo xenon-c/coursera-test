@@ -1,0 +1,9 @@
+h3{
+ color:darkblue;   
+}
+
+#navbar{
+    text-align: left;
+    display: flex;
+    justify-content: space-evenly;
+}
