@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Entity References</title>
+        <link rel="stylesheet" href="../style.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="navbar">
+            <p><a href="../index.html">Home</a></p>
+            <p><a href="../setupnotes.html">Setup</a></p>
+            <p><a href="../htmlindex.html">HTML</a></p>
+            <p><a href="../cssindex.html">CSS</a></p>
+            <p><a href="../jsindex.html">JavaScript</a></p>
+        </div>
+        <div>
+            <h1><a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers/lecture/wOLqj/lecture-8-html-character-entity-references" target="_blank">HTML Character Entity References</a></h1>
+            <h3>Usage of HTML Entities</h3>
+            <ul>
+                <li>Help avoid rendering issues</li>
+                <li>Safeguard against more limited character endcoding</li>
+                <li>Provide characters not available on keyboard (E.g. &copy;)</li>
+            </ul>
+            <h3>3 Characters To Avoid</h3>
+            <ul>
+                <li>Instead of "&lt;", use "& lt;" (no space between)</li>
+                <li>Instead of "&gt;", use "& gt;" (no space between)</li>
+                <li>Instead of "&amp;", use "& amp;" (no space between)</li>
+            </ul>
+            <h3>Symbols:</h3>
+            <ul>
+                <li>&copy;: "& copy;"</li>
+                <li>&quot;: "& quot;"</li>
+            </ul>
+            <h3>Non-Breaking Space</h3>
+            <p>This makes it so that words connected by it will either not wrap or wrap all together at once</p>
+            <ul>
+                <li>Use: "& nbsp;"</li>
+            </ul>
+            <p>Note: this can create extra whitespace, but you should use span and add margins instead if you want to do that</p>
+        </div>
+    </body>
+</html>
