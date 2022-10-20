@@ -26,10 +26,42 @@
                                 <li>ID: specified with a # in front of the id name</li>
                             </ul>
                         </li>
-                        <li>Grouping Selectors:
+                        <li>Combining Selectors:
                             <ul>
-                                <li>Seperating selectors with ,: All selectors listed will be included as target for declaration</li>
-                                <li></li>
+                                <li>Selector1, Selector2: OR Selector - Both Selector1 and Selector2 elements will be targeted</li>
+                                <li>Selector1Selector2: AND Selector - Targets the element that fits both criterion 
+                                    <ul>
+                                        <li>E.g. p.big selects only p elements with the class big</li>
+                                    </ul></li>
+                                <li>Selector1 &gt; Selector2: Child selector - Targets every Selector2 element that is a direct child of a Selector1 element 
+                                    <ul>
+                                        <li>E.g. div &gt; p targets all p elements that is a <b>direct child</b> of a div element</li>
+                                    </ul></li>
+                                <li>Selector1 Selector2: Descendant Selector - Targets every Selector2 element that is a descendant of Selector1
+                                    <ul>
+                                        <li>E.g. div p targets all p elements that is a descendant of a div even if it's not a direct child of it</li>
+                                    </ul>
+                                </li>
+                                <li>Selector1 + Selector2: Adjacent Sibling Selector - Targets ONLY the Selector2 that <b>IMMEDIATELY FOLLOWS</b> Selector1 element and both have the same parent</li>
+                                <li>Selector1 ~ Selector2: General Sibling Selector - Targets ALL Selector2 elements that follow the first element (not necessarily immediately) and have the same parent</li>
+                            </ul>
+                        </li>
+                        <li>Pseudo-Class Selectors
+                            <ul>
+                                <li>Usage: selector:pseudo-class
+                                    <ul>
+                                        <li>:link - this pseudo-class targets elements with a link</li>
+                                        <li>:visited - this pseudo-class targets elements with a clicked link
+                                            <ul>
+                                                <li>Use text-decoration: none; to remove the underline on the link</li>
+                                            </ul>
+                                        </li>
+                                        <li>:hover - this pseudo-class targets elements that are being hovered over by mouse</li>
+                                        <li>:active - this pseudo-class targets elements that are being clicked on but the user hasn't released his click</li>
+                                        <li>:nth-child() - this pseudo-class targets the specific nth child of an element (number inside brackets) (can also target all odd/even elements using odd/even instead of number in brackets)</li>
+                                    </ul>
+                                </li>
+                                <li>Note that you can stack pseudo-class selectors by doing selector:pseudo-class1:pseudo-class2 <br>this targets the element when both pseudo-class requirements are met (AND)</li>
                             </ul>
                         </li>
                     </ul>

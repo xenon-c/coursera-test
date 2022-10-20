@@ -3,7 +3,30 @@ h3{
 }
 
 #navbar{
-    text-align: left;
     display: flex;
     justify-content: space-evenly;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+#navbar a:link, #navbar a:visited {
+    background-color: aqua;
+    display: block;
+    width: 125px;
+    text-align: center;
+    padding: 10px 0 10px;
+    font-size: medium;
+}
+
+#navbar a:hover {
+    background-color: aquamarine;
+}
+
+#navbar a:active {
+    background-color: antiquewhite;
+    font-size: small;
+    padding: 11px 0 11px;
+    color: red;
 }
