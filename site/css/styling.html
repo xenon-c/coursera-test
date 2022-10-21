@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Styling</title>
+        <link rel="stylesheet" href="../style.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="navbar">
+            <p><a href="../index.html">Home</a></p>
+            <p><a href="../setupnotes.html">Setup</a></p>
+            <p><a href="../htmlindex.html">HTML</a></p>
+            <p><a href="../cssindex.html">CSS</a></p>
+            <p><a href="../jsindex.html">JavaScript</a></p>
+        </div>
+        <div>
+            <h1>CSS Styling</h1>
+            <h3>Notes</h3>
+            <ul>
+                <li>Style Placement
+                    <ul>
+                        <li>Inline Styling: done as attribute of an element (no need to specify target), can put multiple styles, just end with ; after each. (Great for testing)</li>
+                        <li>External Stylesheets: an external stylesheet file, (file type: .css), linked in head with link element, attribute href="./style.css" (Good for real sites)</li>
+                    </ul>
+                </li>
+                <li>Conflict Resolution
+                    <ul>
+                        <li>Origin Precedence: <b>LAST DECLARATION WINS</b> (HTML is processed from top to bottom) (So if there's stylesheet linked in head, think of style as placed in head, so any styling below wins)</li>
+                        <li>Inheritance: By targeting a parent element, every descendant of that element will inherit that property</li>
+                        <li>Specificity: Most specific selector combination wins (style="" &gt; ID &gt; Class/Pseudo-Class/Attribute &gt; # of Elements used)</li>
+                        <li>Overwriting: !important after a declaration overwrites everything (it is top priority and cannot be overwritten) (<b>AVOID as it will cause a mess</b>)</li>
+                    </ul>
+                </li>
+                <li>Font Styling
+                    <ul>
+                        <li>font-family: put a few fonts as when you specify font family, you're relying on the user's computer to have the font installed (as a backup) (specify serif vs sans serif as final measure)</li>
+                        <li>color: #RRGGBB (hexadecimal value: first 2 numbers red value, middle 2 green, last 2 blue)</li>
+                        <li>font-style: italic</li>
+                        <li>font-weight: bold or a numerical value (bold = 900)</li>
+                        <li>font-size: give it a numerical value in pixels (e.g. 24px)</li>
+                        <li>text-transform: lowercase or uppercase</li>
+                        <li>text-align: align right, left, or center</li>
+                    </ul>
+                </li>
+                <li>Font Size
+                    <ul>
+                        <li>%: take the default size and increase it by n% (E.g. 120% = increase default font size by 120%)</li>
+                        <li>em: 1 em = width of the ltter m in the particular font we're using (relative)</li>
+                        <li>Note: Font size has a <b>cumulative effect</b> instead of overwriting effect when you specify them in different order (E.g. 1em + 2em = 3em)</li>
+                        <li>Note: Relative font size is good if user changes zoom/browser size (as font size will still be relative)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
