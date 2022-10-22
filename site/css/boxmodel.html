@@ -17,8 +17,39 @@
             <h1>The Box Model</h1>
             <h3>Notes</h3>
             <ul>
-                <li>Every content has a padding (around content), border (around padding) and margin (around border)
-                    <img src="./boxmodelimg.png" alt="Illustration of the Box Model" width="600" height="200">
+                <li>In HTML, every element is considered a box: They have a padding (around content), border (around padding) and margin (around border)
+                <img src="./boxmodelimg.png" alt="Illustration of the Box Model" width="600" height="300" id="boxmodel">
+                <li>The padding and margin have a default value by the user's agent stylesheet</li>
+                <li>You can set values for each by specifying it in css (E.g. padding: 10px, border: 5px solid black, margin: 40px)
+                    <ul>
+                        <li>If you set a width for a "box", the actual box width is the number set plus total padding, and border width</li>
+                        <li>The width/height set is only set for the content by default, and doesn't include padding and border</li>
+                        <li>If you change the box-sizing property to border-box, the width and height set = the width and height of box (default: content-box)</li>
+                    </ul>
+                </li>
+                <li>Note that <b>box-sizing property is not inherited</b>: you can't set it on a parent element expecting child to inherit it
+                    <ul>
+                        <li>You can use the star selector to make it so every element has this property set to border-box</li>
+                    </ul>
+                </li>
+                <li>Note that <b>margin and padding properties are inherited</b>: if body element is set to margin and padding 0, every element inside of it will be the same (unless specified otherwise)</li>
+                <li>Cumulative Margins
+                    <ul>
+                        <li>If a content box has margin of 40px, and another content box next to it has margin of 50px, cumulative margin will be 90px</li>
+                        <li>If a content box has a margin of 20px and another box <b>below it</b> has a margin of 30px, cumulative margin will be 30px
+                        <ul>
+                            <li>The larger margin will win and the other margin will collapse</li>
+                        </ul></li>
+                    </ul>
+                </li>
+                <li>Overflow:
+                    <ul>
+                        <li>If you set a height for a box that cannot contain all the content, content will spill over to the next box and create a mess (as overflow is set to visible by default)</li>
+                        <li>Hidden: content will be cut short where box ends</li>
+                        <li>Auto: puts scroll bars where needed so you can scroll through content</li>
+                        <li>Scroll: puts scroll bars both ways even if uneeded (e.g. horizontal scroll + vertical scroll when you only need vertical)</li>
+                        <li>Note that <b>scroll bars are useful for Terms of Service agreements</b> where it's expected to all be packed in a big chunk</li>
+                    </ul>
                 </li>
             </ul>
         </div>
