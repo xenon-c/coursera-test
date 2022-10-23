@@ -1,0 +1,71 @@
+.floatexample1 > p, .floatexample2 > p {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+.floatexample1, .floatexample2 {
+    background-color: beige;
+}
+
+#p1-1, #p2-1 {
+    background-color: red;
+}
+
+#p1-1 {
+    float: right;
+}
+
+#p1-2, #p2-2 {
+    background-color: orange;
+}
+
+#p1-3, #p2-3 {
+    background-color: yellow;
+}
+
+#p1-4, #p2-4 {
+    background-color: greenyellow;
+}
+
+.floatexample2 > p {
+    float: left;
+    margin-right: 10px;
+}
+
+.floatexample2 > section, .floatexample3 > section {
+    clear: left;
+}
+
+.floatexample3 > p {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.floatexample3 {
+    background-color: aqua;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#epnavbar {
+    justify-content: space-evenly;
+    display: flex;
+    text-decoration: none;
+    background-color: lightcoral;
+    margin-top: 20px;
+}
+
+#epnavbar a:hover {
+    background-color: blue;
+    color: red;
+}
+
+#epnavbar a:link {
+    background-color: violet;
+    border: 1px solid black;
+    padding: 10px;
+}

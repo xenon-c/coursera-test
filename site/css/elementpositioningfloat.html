@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Element Positioning</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="./elementpositioningstyle.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="navbar">
+            <p><a href="../index.html">Home</a></p>
+            <p><a href="../setupnotes.html">Setup</a></p>
+            <p><a href="../htmlindex.html">HTML</a></p>
+            <p><a href="../cssindex.html">CSS</a></p>
+            <p><a href="../jsindex.html">JavaScript</a></p>
+        </div>
+        <div>
+            <h1>Positioning Elements</h1>
+            <div id="epnavbar">
+                <p><a href="./elementpositioningfloat.html">Positioning Elements with Float</a></p>
+                <p><a href="./elementpositioningbasics.html">Relative and Absolute Element Positioning</a></p>
+            </div>
+            <div>
+                <h3><a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers/lecture/Tj19u/lecture-21-positioning-elements-by-floating" target="_blank">Positioning Elements By Floating</a></h3>
+                <ul>
+                    <li>floating is useful for making different columns for different sections</li>
+                    <li>floating elements can produce very flexible layouts</li>
+                    <li>floats are taken out of their normal document flow</li>
+                    <li>floats don't have vertical margin collapse</li>
+                    <li>to resume normal document flow, use the clear property</li>
+                </ul>
+                <h4>Example 1:</h4>
+                <ul>
+                    <li>When you float elements, <b>browser takes them out of regular document flow</b>, (div is convinced spot of the red box originally was is empty - the red box is not considered as part of the div)</li>
+                    <li>Regular elements have margin collapsed, however <b>(vertical) margin of floated elements will not be collapsed</b> (so red box is a bit lower than orange as it has top margin)</li>
+                </ul>
+                <div class="floatexample1">
+                    <p id="p1-1">Floated Right</p>
+                    <p id="p1-2">Just a paragraph</p>
+                    <p id="p1-3">A normal paragraph</p>
+                    <p id="p1-4">Another paragraph</p>
+                </div>
+                <h4>Example 2:</h4>
+                <ul>
+                    <li>The "clear: left;" declaration is used in this example, which announcees nothing is allowed to be floating left to it</li>
+                </ul>
+                <div class="floatexample2">
+                    <p id="p2-1">Floated Left</p>
+                    <p id="p2-2">Also Floated Left</p>
+                    <p id="p2-3">Same Here Man</p>
+                    <p id="p2-4">Me Too</p>
+                    <section>Some text yes</section>
+                </div>
+                <h4>Example 3:</h4>
+                <ul>
+                    <li>Here we demonstrate how to make different columns of text using float</li>
+                </ul>
+                <div class="floatexample3">
+                    <p id="p3-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et netus et malesuada fames. Eu volutpat odio facilisis mauris. Sit amet est placerat in egestas erat. At tempor commodo ullamcorper a lacus vestibulum. Tincidunt ornare massa eget egestas purus viverra accumsan in nisl. Sodales neque sodales ut etiam. Dictum non consectetur a erat nam. Bibendum est ultricies integer quis auctor.</p>
+                    <p id="p3-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <section>random text after the floated p elements</section>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

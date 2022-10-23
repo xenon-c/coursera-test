@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Element Positioning</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="./elementpositioningstyle.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="navbar">
+            <p><a href="../index.html">Home</a></p>
+            <p><a href="../setupnotes.html">Setup</a></p>
+            <p><a href="../htmlindex.html">HTML</a></p>
+            <p><a href="../cssindex.html">CSS</a></p>
+            <p><a href="../jsindex.html">JavaScript</a></p>
+        </div>
+        <div>
+            <h1>Positioning Elements</h1>
+            <div id="epnavbar">
+                <p><a href="./elementpositioningfloat.html">Positioning Elements with Float</a></p>
+                <p><a href="./elementpositioningbasics.html">Relative and Absolute Element Positioning</a></p>
+            </div>
+            <div>
+                <h3><a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers/lecture/AtyKw/lecture-22-part-1-relative-and-absolute-element-positioning" target="_blank">Relative and Absolute Element Positioning</a></h3>
+                <ul>
+                    <li><b>Static Positioning</b>: Normal document flow. It is default for all, except for html (Positioning offsets are ignored)</li>
+                    <li><b>Relative Positioning</b>: Element is positioned relative to its position in normal document flow (E.g. offset = offset from its normal document flow position)
+                    <ul><li>You're basically creating an anchor for the offset position</li>
+                    <li>Note that element is NOT taken out of normal document flow (even if moved, original spot preserved)</li></ul></li>
+                    <li><b>Absolute Positioning</b>: All offsets are relative to the position of nearest ancestor which has positioning set on it, other than Static
+                    <ul><li>by default, html is the only element that has non-static positioning set on it (relative)</li>
+                    <li>Element is <b>taken out of normal document flow</b></li>
+                    <li>If container element is offset, everything inside is offset with it</li></ul></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
