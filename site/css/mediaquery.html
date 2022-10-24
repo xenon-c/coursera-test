@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Anatomy</title>
+        <link rel="stylesheet" href="../style.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="navbar">
+            <p><a href="../index.html">Home</a></p>
+            <p><a href="../setupnotes.html">Setup</a></p>
+            <p><a href="../htmlindex.html">HTML</a></p>
+            <p><a href="../cssindex.html">CSS</a></p>
+            <p><a href="../jsindex.html">JavaScript</a></p>
+        </div>
+        <div>
+            <h1><a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers/lecture/FzfK8/lecture-23-part-1-media-queries" target="_blank">Media Queries</a></h1>
+            <h3>Notes</h3>
+            <ul>
+                <li><b>Media queries allow you to group styles together</b> and target to different devices based on some criteria (e.g. by width, height, portrait, landscape etc.)
+                <ul><li>E.g. Phone size and computer size is different so it makes sense to design different styles for each</li></ul></li>
+                <li>Start with base style - styles that apply regardless of the device (E.g. color of text is always blue) and then add media queries after</li>
+                <li><b>Make sure you don't overlap range boundaries</b> if you're targeting by width</li>
+                <li>You can use <b>chrome developer tools</b> (in the browser) to test out media queries (there's even a cell phone icon and you can select orientation and device and device size)</li>
+                <li><b>Break point:</b> the points between the range of 1 media query and another</li>
+            </ul>
+            <h3>Syntax</h3>
+            <ul>
+                <li>@media (criteria) {}
+                    <ul>
+                        <li>a media query always starts with @media</li>
+                        <li>an example of critera would be (max-width: 767px) and resolves to true or false - If true, style within curly braces apply (like stylesheet within stylesheet) </li>
+                        <li>you can combine multiple criteria with logical operators:
+                            <ul>
+                                <li>(criteria) and (criteria) - applies if both criteria are true</li>
+                                <li>(criteria), (criteria) - applies if one criteria is true (OR operator)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
