@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Anatomy</title>
+        <link rel="stylesheet" href="../style.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="navbar">
+            <p><a href="../index.html">Home</a></p>
+            <p><a href="../setupnotes.html">Setup</a></p>
+            <p><a href="../htmlindex.html">HTML</a></p>
+            <p><a href="../cssindex.html">CSS</a></p>
+            <p><a href="../jsindex.html">JavaScript</a></p>
+        </div>
+        <div>
+            <h1><a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers/lecture/Pfa75/lecture-24-part-1-responsive-design" target="_blank">Responsive Design</a></h1>
+            <h3>Notes</h3>
+            <ul>
+                <li><b>Responsive Website</b>: a site designed to <i>adapt its layout to viewing environment</i> by using fluid, propertion-based grids, flexible images and CSS media queries</li>
+                <li>Site's layout adapts to the size of the device - Content verbosity or its visual delivery may change</li>
+                <li>Alternative to Responsive Design: Have server detect user agent (mobile vs desktop - mobile = m.website.com, desktop: www.website.com)
+                    <ul><li>Mobile devices are too varied in sizes themselves so its hard to make a site that satisfies all mobile clients</li></ul>
+                </li>
+                <li>Phones automatically zoom out unless told otherwise to try to fit the entire contents of the website on the screen
+                    <ul><li>Tell the phone's browser to stay at regular zoom level by specifying a meta tag</li>
+                    <li>Use &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</li>
+                    <li>this makes the browser consider the device's width as the browser width and scale of viewing as 1 (won't scale up or down)</li></ul>
+                </li>
+                <li>Use % to achieve fluid width</li>
+            </ul>
+            <h3>12 Column Grid Responsive Layout</h3>
+            <ul>
+                <li>Factors of 12: 1, 2, 3, 4, 6, 12 - You can sub-divide site into sections that are evenly split and nicely layout themselves</li>
+                <li>Browser width = 100%, so 1 column = 100%/12 = 8.33%</li>
+                <li>You can even have nested grids - another 12 column grid layout inside of the sections</li>
+                
+            </ul>
+        </div>
+    </body>
+</html>
