@@ -34,3 +34,25 @@ a:link, a:visited {
 #boxmodel {
     display: block;
 }
+
+#rlebutton {
+    clear: left;
+}
+
+#rlebutton a:link, #rlebutton a:visited{
+    background-color: crimson;
+    display: block;
+    width: 300px;
+    text-align: center;
+    padding: 10px 0 10px;
+    font-size: large;
+    color: white;
+}
+
+#rlebutton a:hover {
+    background-color: orange;
+}
+
+#rlebutton a:active {
+    background-color: purple;
+}
