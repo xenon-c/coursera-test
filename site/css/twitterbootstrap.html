@@ -37,8 +37,29 @@
             </ul>
             <h3>The Bootstrap Grid System</h3>
             <ul>
-                <li></li>
+                <li>Bootstrap grid must be inside container or container-fluid (E.g. div with class container/container-fluid)
+                    <ul><li>container-fluid: stretches your layout to the full width of the browser + provides consistent padding around grid and other content</li>
+                    <li>container: has predetermined fixed width, but still resposnive based on the width of browser (break points)</li></ul>
+                </li>
+                <li>The row class creates horizontal groups of columns
+                    <ul><li>Columns collapse and interact with each other as a group but independently from columns in another row</li>
+                    <li>applies negative left/right margins to counteract padding given by contianer/container-fluid class</li>
+                    <li>Each column has its own padding as we want to sepearte columns from each other</li></ul>
+                </li>
+                <li>Bootstrap column class: col-SIZE-SPAN 
+                    <ul>
+                        <li>SIZE = screen width range identifier (e.g. LG 1200px+, MD etc.)</li>
+                        <li>Columns will collapse (stack on top of/below each other) below that width - If you had several columns before, you'll only have 1
+                            <ul><li>Unless another rule applies (E.g. Specified both large and medium)</li>
+                            <li>If you want to have a guarenteed column layout at all times, you can just specify .col-xs-SPAN</li></ul>
+                        </li>
+                        <li>SPAN = How many columns element should span (in 12 column grid system), value can be 1-12
+                            <ul><li>element that pushes sum of columns above 12 will automatically wrap to the next line</li></ul>
+                        </li>
+                    </ul>
+                </li>
             </ul>
+            <img src="./negativerowmargin.png" alt="Demonstration of Negative Row Margin Purpose" id="blockdisplay" width="600" height="300">
         </div>
     </body>
 </html>
