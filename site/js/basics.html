@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Basics</title>
+        <link rel="stylesheet" href="../style.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="navbar">
+            <p><a href="../index.html">Home</a></p>
+            <p><a href="../setupnotes.html">Setup</a></p>
+            <p><a href="../htmlindex.html">HTML</a></p>
+            <p><a href="../cssindex.html">CSS</a></p>
+            <p><a href="../jsindex.html">JavaScript</a></p>
+            <p><a href="../dealingwithclients.html">Client</a></p>
+        </div>
+        <div>
+            <h1>JavaScript Basics</h1>
+            <h3>Setup</h3>
+            <ul>
+                <li>&lt;script src="./script.js"&gt; &lt;/script&gt;</li>
+            </ul>
+            <h3>Basic Commands</h3>
+            <ul>
+                <li>console.log() - logs the value inside brackets to the console</li>
+            </ul>
+            <h3>Variables</h3>
+            <ul>
+                <li>Defining a Variable: var variableName = variableValue
+                    <ul><li>for a string (text), add double quotes on both sides of the value</li>
+                    <li>no types are declared (JS automatically figures out the type of the variable when it is run)</li></ul>
+                </li>
+            </ul>
+            <h3>Functions</h3>
+            <ul>
+                <li>Creating a Function: function functionName (arg) {...}
+                    <ul><li>an alternative way of doing this is: var functionName = function () {...}</li>
+                    <li>both ways allow you to refer to the function as functionName, though note that no function name is declared after the function keyword (in the variable method)</li>
+                    <li>arguments (to be given when function is invoked) are defined without var (E.g. function compare (x, y) {...}</li></ul>
+                </li>
+                <li>Invoking Function: functionName(); (executes the function functionName)</li>
+                <li>Return Value from Function: return value;
+                    <ul><li>E.g. function compare (x, y) {return x > y;}</li>
+                    <li>var a = compare(4, 5); (return value is stored inside a)</li></ul>
+                </li>
+            </ul>
+            <h3>Scope</h3>
+            <ul>
+                <li>Global
+                    <ul><li>variables and functions defined here are available everywhere</li></ul>
+                </li>
+                <li>Function (lexical)
+                    <ul><li>variables and functions defined here are available only within this function</li></ul>
+                </li>
+            </ul>
+            <h3>Scope Chain</h3>
+            <ul>
+                <li>Everything is executed in an Execution Context</li>
+                <li>Function invocation creates a new Execution Context</li>
+                <li>Each Execution Context has its own Variable Environment (where it stores its newly defined functions/variables), a special 'this' object, and a reference to its outer environment (execution environment in which this function is defined)</li>
+                <li>Global scope has no outer environment as it is the most "outer" there is</li>
+                <li><b>Referenced variable will be searched for in its current scope (where the function is physically defined) first</b>. If not found, outer reference will be searched. If not found, outer reference's outer reference will be searched, etc. This keeps on going until Global scope. If still not found, variable is undefined</li>
+            </ul>
+        </div>
+    </body>
+</html>
