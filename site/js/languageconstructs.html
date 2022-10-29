@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Basics</title>
+        <link rel="stylesheet" href="../style.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="navbar">
+            <p><a href="../index.html">Home</a></p>
+            <p><a href="../setupnotes.html">Setup</a></p>
+            <p><a href="../htmlindex.html">HTML</a></p>
+            <p><a href="../cssindex.html">CSS</a></p>
+            <p><a href="../jsindex.html">JavaScript</a></p>
+            <p><a href="../dealingwithclients.html">Client</a></p>
+        </div>
+        <div>
+            <h1>Common Language Constructs</h1>
+            <h3>Notes</h3>
+            <ul>
+                <li>variable += " string"; adds "string" to the back of the variable (basically equal to variable = variable + " string";)</li>
+                <li>NaN represents Not a Number</li>
+                <li>you can define 2 variables by doing var x = 4, y = 5;</li>
+                <li>if you want to check if 2 variables are equal, make sure you put 2 equal signs between x and y to siginify its a comparison and not defining the first variable</li>
+                <li>Type coercion: language converts something for you from one type to another automatically (so '4' as a string = 4 as a number)
+                    <ul><li>if you don't want this, use triple equals (===), so if they're not the same type, it's not going to try compare them at all</li><li>null, undefined, "", 0, NaN automatically gets coerced to being false (as a Boolean value)</li><li>Any unempty string, and any non-zero number (including negative numbers) will be coerced to true (as a Boolean value)</li></ul>
+                </li>
+                <li>OR operator is represented by ||</li>
+                <li>AND operator is represented by &&</li>
+                <li>If you put curly braces on the next line after return, function returns nothing, but if you put the starting curly brace on the same line as return, function returns the things in the curly braces</li>
+
+            </ul>
+            <h3>For Loops</h3>
+            <ul>
+                <li>for (var i = 0; i &lt; 10; i++) {sum = sum + i;} <ul><li>var i = 0: initialization</li><li>i &lt; 10: Condition checked by JS to see whether loop should be run again</li><li>i++: the action that should be taken when loop is run (++ = +1)</li></ul></li>
+            </ul>
+        </div> 
+    </body>
+</html>
