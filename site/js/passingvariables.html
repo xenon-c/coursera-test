@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Passing Variables</title>
+        <link rel="stylesheet" href="../style.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="navbar">
+            <p><a href="../index.html">Home</a></p>
+            <p><a href="../setupnotes.html">Setup</a></p>
+            <p><a href="../htmlindex.html">HTML</a></p>
+            <p><a href="../cssindex.html">CSS</a></p>
+            <p><a href="../jsindex.html">JavaScript</a></p>
+            <p><a href="../dealingwithclients.html">Client</a></p>
+        </div>
+        <div>
+            <h1>Passing Variables</h1>
+            <h2>Passing Variables by Value</h2>
+            <ul>
+                <li>Given b = a, passing/copying by value means changing copied value in b does not affect the value stored in a and vice versa</li>
+                <li>Primitives are passed by value
+                    <ul><li>When you create a variable, you are creating a memory slot with a value for that variable</li>
+                    <li>Then when you override the value of the variable, you are simply changing the value of the variable in the same memory slot</li></ul>
+                </li>
+                <li>*this concept can be applied to functions (as when you pass an argument into a function, what's really happening is the value of the argument is copied to the value of the "argument variable" of the function)</li>
+            </ul>
+            <h3>Passing Variables by Reference</h3>
+            <ul>
+                <li>Given b = a, passing/copying by reference means changing vopied value in b does affect the value stored in a and vice versa</li>
+                <li>Objects are passed by reference
+                    <ul><li>When you create an object with a property, you are creating 1 memory slot for the value of each property, and 1 memory slot for the object which the value of it will be the memory slot of the property (referencing the memory slot of the property)</li>
+                    <li>So when you create a variable (b) which equals to a, you're actually creating a new memory slot referencing to the same memory slot(s) for the propertie(s)</li>
+                    <li>So when you update a property of the variable b, you're actually updating the value of the same memory slot variable a is referencing to, so a is affected as well (a will have the updated property value of b)</li></ul>
+                </li>
+                <li>*this concept can be applied to functions (as when you pass an argument into a function, what's really happening is the value of the argument is copied to the value of the "argument variable" of the function)</li>
+            </ul>
+        </div>
+    </body>
+</html>

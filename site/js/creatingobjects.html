@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objects</title>
+        <link rel="stylesheet" href="../style.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="navbar">
+            <p><a href="../index.html">Home</a></p>
+            <p><a href="../setupnotes.html">Setup</a></p>
+            <p><a href="../htmlindex.html">HTML</a></p>
+            <p><a href="../cssindex.html">CSS</a></p>
+            <p><a href="../jsindex.html">JavaScript</a></p>
+            <p><a href="../dealingwithclients.html">Client</a></p>
+        </div>
+        <div>
+            <h1>Objects</h1>
+            <h3>Creating Objects & Properties</h3>
+            <ul>
+                <li>You can create an object using var objectName = new Object();</li>
+                <li>If you mention a non-existent property of an object, JS automatically creates it for you
+                    <ul><li>E.g. objectName has no "name" property, but you can create it by doing objectName.name = "something"; and it will create the name property and assign "something" as its value</li>
+                    <li>If you want one of the properties to be an object in it of itself and set a property within, you have to define the property as an object first, and not just straight off specifying the property within the property</li></ul>
+                </li>
+                <li>Object literal: A method of creating objects using curly braces (i.e. var objectName = {};)
+                    <ul><li>You can directly create properties by doing: <br>var compnay = { <br>&nbsp;&nbsp;&nbsp;name: "Facebook", <br>&nbsp;&nbsp;&nbsp;ceo: {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;firstName: "Mark", <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;favColor: "blue"<br>&nbsp;&nbsp;&nbsp;},<br>};</li></ul>
+                </li>
+            </ul>
+            <h3>Retrieving Values</h3>
+            <ul>
+                <li>You can retreive a value from an object using dot notation: console.log(objectName.propertyName) <ul><li>Dot notation will only work with a valid javascript variable name (you can't put spaces in variable names but you can with bracket notation)</li></ul></li>
+                <li>You can also retrieve a value from an object using bracket notation: console.log(objectName["propertyName"]);</li>
+            </ul>   
+        </div>
+    </body>
+</html>

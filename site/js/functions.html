@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Functions</title>
+        <link rel="stylesheet" href="../style.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="navbar">
+            <p><a href="../index.html">Home</a></p>
+            <p><a href="../setupnotes.html">Setup</a></p>
+            <p><a href="../htmlindex.html">HTML</a></p>
+            <p><a href="../cssindex.html">CSS</a></p>
+            <p><a href="../jsindex.html">JavaScript</a></p>
+            <p><a href="../dealingwithclients.html">Client</a></p>
+        </div>
+        <div>
+            <h1>Functions</h1>
+            <h3>Notes</h3>
+            <ul>
+                <li>FUnctions are first-class data types: whatever you can do with a variable/object, you can also do it to function
+                    <ul><li>E.g. you can give functions properties just like an object, so if you have a function called multiply, you could create a property for it by doing multiply.version = "v1.0.0";</li></ul>
+                </li>
+                <li>If you want to call the function, put brackets after the function name. If you simply want to output it's value(s), just specify the name and don't add brackets behind
+                    <ul><li>The value of a function is simply the code of the function itself</li></ul>
+                </li>
+            </ul>
+            <h3>Creating Functions with Functions</h3>
+            <ul>
+                <li>You can create a function with another function by making a function within a function, then returning the value of the function in the function:
+                    <ul>
+                        <li>function makeMultiplier(multiplier) {<br>&nbsp;&nbsp;&nbsp;var myFunc = function (x) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return multiplier * x;<br>&nbsp;&nbsp;&nbsp;};<br>&nbsp;&nbsp;&nbsp;return myFunc;<br>};<br><br>var multiplyBy3 = makeMultiplier(3);<br>console.log(multiplyBy3(10));
+                            <ul>
+                                <li>var multiplyBy3 = makeMultiplier(3) - a variable called multiplyBy3 is created, and it's value is the code of myFunc (as myFunc is returned my makeMultiplier function). As the value 3 is passed into multiplier, the myFunc returned will contain the code return 3 * x when it is invoked.</li>
+                                <li>multiplyBy3(10) - will output 30 as you pass the value 10 into the function multiplyBy3 and so it returns 3 * 10 (x = 10)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Passing Functions as Argument</h3>
+            <ul>
+                <li>function doOperationOn(x, operation) {<br>&nbsp;&nbsp;&nbsp;return operation(x);<br>};<br><br>var result = doOperationOn(5, multiplyBy3);
+                    <ul>
+                        <li>doOperationOn(5, multiplyBy3); - brackets are not added to multiplyBy3 because you just want to pass on the value of it, not invoke it right there</li>
+                        <li>result will be 15 as doOperationOn(5, multiplyBy3); returns the value of multiplyBy3(5) = 3* 5 = 15</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
