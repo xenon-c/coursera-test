@@ -18,8 +18,33 @@
             <h1>Function Constructors</h1>
             <h3>The "this" variable</h3>
             <ul>
-                <li>the 'this' variable is actually referencing to the global "Window" object</li>
-                <li>if you create a property for the window object (or this), </li>
+                <li>the 'this' variable is actually referencing to the global "window" object</li>
+                <li>if you create a property for the this variable, you are creating a property for the global window object</li>
+                <li>when you put the keyword 'new' before invoking a function to be stored in a variable (E.g. var myCircle = new Circle(10);), the this keyword inside the function will point to the new object created (object gets named after the function that created it, so if your function name is Circle, object name will be Circle)
+                    <ul>
+                        <li>This type of function is called a "Function Constructor"</li>
+                        <li>Note that you can't return anything from the function or it won't work as desired</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Prototype</h3>
+            <ul>
+                <li>You can create a property containing a function in the function constructor, but it will be created in every instance of the object (wasted processing)
+                    <ul>
+                        <li>If you want the function to be constant regardless of instance, you can do it with "prototype"</li>
+                        <li>E.g. Circle.proptotype.getArea = function () { return Math.PI = Math.pow(this.radius, 2);}</li>
+                        <li>This creates a single constant function that will be in every single instance of the object created</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Object Literals</h3>
+            <ul>
+                <li>If you create a object as a variable and inside it you have a property which is a function, the 'this' keyword specified in it will refer to the actual object that got created</li>
+                <li>However, when you have a function inside a function, the this keyword starts pointing to the global object "window"
+                    <ul>
+                        <li>You can get around this by creating a variable and setting it's value to "this" in the first function, then refer to that variable in the functions inside and so on</li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </body>
