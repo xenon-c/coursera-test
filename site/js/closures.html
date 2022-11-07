@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Basics</title>
+        <link rel="stylesheet" href="../style.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="navbar">
+            <p><a href="../index.html">Home</a></p>
+            <p><a href="../setupnotes.html">Setup</a></p>
+            <p><a href="../htmlindex.html">HTML</a></p>
+            <p><a href="../cssindex.html">CSS</a></p>
+            <p><a href="../jsindex.html">JavaScript</a></p>
+            <p><a href="../dealingwithclients.html">Client</a></p>
+        </div>
+        <div>
+            <h1>JavaScript Types</h1>
+            <h3>Notes</h3>
+            <ul>
+                <li>A type is a particular data structure
+                    <ul><li>Each language defines some built in types</li>
+                    <li>Built-in types can be used to build other data structures</li>
+                    <li>JS has 7 built-in types: 6 primitive and 1 Object type</li></ul>
+                </li>
+            </ul>
+            <h3>Object Type</h3>
+            <ul>
+                <li>Object is a collection of name/value pairs <ul><li>E.g. firstName (name): "Joe" (value), <br>lastName: "Mama",</li></ul></li>
+                <li>Objects can be nested in other objects <ul><li>E.g. social (name): { <br>twitter: "@joemama", <br>instagram: "@joemama"} (value)</li></ul></li>
+            </ul>
+            <h3>Primitive Types</h3>
+            <ul>
+                <li>Primitive type represents a single (single value, i.e. NOT object), immutable (immutable: once value is set, it can't be changed - read-only value) value</li>
+                <li>Boolean: Can only have 2 values - true or false</li>
+                <li>Undefined: signifies no value has ever been set on this variable <ul><li>variable value is set to undefined by default if you didn't give it a value after creating it</li><li>You can set a variable to undefined, but you should NEVER do it, because its meaning is that its never been defined, so defining it and setting it to undefined is counter ot its core meaning</li></ul></li>
+                <li>Null: signifies lack of value (lack of definition) <ul><li>Can only have 1 value: null</li><li>It's ok to explicitly set a variable to null</li></ul></li>
+                <li>Number: the only numeric type in JS <ul><li>Always presented under the hood as a double-precision 64-bit floating point (JS has no integer type - integers are a subset of doubles instead)</li></ul></li>
+                <li>String: a sequence of characters used to represent text <ul><li>use either single or double quotes</li></ul></li>
+                <li>Symbol: new to ES6, not covered in this class</li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrays</title>
+        <link rel="stylesheet" href="../style.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="navbar">
+            <p><a href="../index.html">Home</a></p>
+            <p><a href="../setupnotes.html">Setup</a></p>
+            <p><a href="../htmlindex.html">HTML</a></p>
+            <p><a href="../cssindex.html">CSS</a></p>
+            <p><a href="../jsindex.html">JavaScript</a></p>
+            <p><a href="../dealingwithclients.html">Client</a></p>
+        </div>
+        <div>
+            <h1>Arrays</h1>
+            <h3>Notes</h3>
+            <ul>
+                <li>create array by doing var array = new Array();</li>
+                <li>array values can vary (e.g. 1 can be string, 2 can be number, 3 can be function, etc.)</li>
+                <li>to invoke a function stored as an array value, put brackets after the square brackets and place the argument you need to pass (optional) inside the brackets</li>
+                <li>each array has a property called "length" that gives you the length of the array (how many data values there are)</li>
+            </ul>
+            <h3>Adding Values</h3>
+            <ul>
+                <li>to add values to the array, you can do arrayName[position] = "Value"; - where position is a number (0 = 1st data, 1 = 2nd data...), and arrayName is the name of the array variable you created</li>
+                <li>alternatively, you can also do var arrayName = ["value1", "value2", "value3"]; - where value1 is the 1st value, at position 0</li>
+            </ul>
+            <h3>Retreiving Values</h3>
+            <ul>
+                <li>you can retrieve a specific value from the array using console.log(arrayName[position]);</li>
+                <li>There's a special for loop that retrieves every value in an array:
+                    <ul><li>for (var value in arrayName) { console.log(value + ": " + arrayName[value]); }; - where value can be anything (it's a temporary variable), and arrayName[name]; is retrieving the value</li></ul>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
