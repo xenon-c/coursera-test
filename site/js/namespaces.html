@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stuff</title>
+        <link rel="stylesheet" href="../style.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="navbar">
+            <p><a href="../index.html">Home</a></p>
+            <p><a href="../setupnotes.html">Setup</a></p>
+            <p><a href="../htmlindex.html">HTML</a></p>
+            <p><a href="../cssindex.html">CSS</a></p>
+            <p><a href="../jsindex.html">JavaScript</a></p>
+            <p><a href="../dealingwithclients.html">Client</a></p>
+        </div>
+        <div>
+            <h3>Namespaces</h3>
+            <ul>
+                <li>If you have different js scripts and they declare the same variable and have a function using it, you can create a namespace to sepearte them so the first doesn't get overwritten</li>
+                <li>You can do this by declaring the variable and the function as a property of an object, then invoking the function by specifying the object property and using the respective property</li>
+            </ul>
+            <h3>Immediately Invoked Functions</h3>
+            <ul>
+                <li>You can invoke a function immediately after declaring it by wrapping the function declaration in brackets (thus making it an object), then putting brackets behind it to invoke it</li>
+                <li>E.g. (function (greeting) { console.log(greeting); };)(hi); - hi is the argument passed into the function (greeting variable), so this function will log hi</li>
+            </ul>
+        </div>
+    </body>
+</html>
